@@ -16,3 +16,4 @@ echo "please create password"
 read  -s password 
 
 echo "username:$username password:$password"
+read -s $echo
