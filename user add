@@ -10,9 +10,11 @@ echo $((Start_time-$End_Time))
 
 #!bin/bash
 echo "please create username"
-read  useradd
+read  -s useradd
 
 echo "please create password"
-read  password 
+read  -s password 
 
 echo "please create username:$username;please create password:$password"
+read -s $username
+read -s $password
