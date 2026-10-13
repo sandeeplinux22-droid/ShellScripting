@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "user add"
-read user add
+read -s user add
 echo "password"
-read password 
+read -s  password 
