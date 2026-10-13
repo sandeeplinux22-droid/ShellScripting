@@ -6,9 +6,10 @@ End_Time=$(date +%s)
 echo "end execution time:$End_Time"
 sleep 10
 Totaltime=$(date +%s)
-echo $((End_Time-$Start_Time))
+echo $((End_Time-Start_Time))
 
 #!/bin/bash
+
 echo "please create username"
 read  -s useradd
 
