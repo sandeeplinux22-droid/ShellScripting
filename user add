@@ -7,10 +7,3 @@ read  useradd
 echo "$password"
 read  password 
 
-start_time=$(date +$s)
-echo "start time:$start_time"
-end_time=$(date +$s)
-echo "end time:$end_time"
-sleep 5
-Totaltime=$(date +$s)
-echo $((start_time-end_time))
