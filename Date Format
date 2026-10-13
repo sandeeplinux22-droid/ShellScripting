@@ -4,5 +4,6 @@ Start_time=$(date +%s)
 echo "Start execution time:$Start_time"
 End_Time=$(date +%s)
 echo "end execution time:$End_Time"
+sleep 10
 Totaltime=$(date +%s)
 echo $((Start_time-$End_Time))
