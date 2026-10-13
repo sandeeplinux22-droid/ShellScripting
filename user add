@@ -1,6 +1,16 @@
 #!/bin/bash
 
-echo "user add"
+useradd=$1
+echo "$1"
 read -s user add
-echo "password"
+password=$2
+echo "$2"
 read -s  password 
+
+start_time=$(date +$s)
+echo = "start time = $start_time"
+end_time=$(date +$s)
+echo = "end time = $end_time"
+sleep 5
+Totaltime=$(date +$s)
+echo = $((start_time-end_time))
