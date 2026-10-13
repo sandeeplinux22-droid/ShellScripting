@@ -1,11 +1,11 @@
 #!/bin/bash
 
-useradd=$1
-echo "$1"
-read -s user add
-password=$2
-echo "$2"
-read -s  password 
+useradd=sandeep
+echo "$useradd"
+read  user add
+password=$123
+echo "$password"
+read  password 
 
 start_time=$(date +$s)
 echo = "start time = $start_time"
