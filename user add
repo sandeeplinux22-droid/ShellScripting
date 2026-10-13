@@ -15,6 +15,4 @@ read  -s useradd
 echo "please create password"
 read  -s password 
 
-echo "please create username:$username;please create password:$password"
-read -s $username
-read -s $password
+echo "username:$username password:$password"
