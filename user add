@@ -9,9 +9,10 @@ Totaltime=$(date +%s)
 echo $((Start_time-$End_Time))
 
 #!bin/bash
-echo "$useradd"
+echo "please create username"
 read  useradd
 
-echo "$password"
+echo "please create password"
 read  password 
 
+echo "please create username:$username;please create password:$password"
