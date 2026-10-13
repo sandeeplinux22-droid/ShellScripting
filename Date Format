@@ -1,0 +1,8 @@
+#!/bin/bash
+
+Starttime=$(date+%s)
+echo "Start execution time:$Starttime"
+EndTime=$(date+%s)
+echo "end execution time:$EndTime"
+Totaltime=$(date+%s)
+echo "(($Starttime-$EndTime))"
