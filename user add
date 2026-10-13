@@ -3,4 +3,4 @@
 echo "user add"
 read user add
 echo "password
-read passwd 
+read password 
