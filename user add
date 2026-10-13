@@ -1,9 +1,9 @@
 #!/bin/bash
 
-useradd=sandeep
+
 echo "$useradd"
 read  useradd
-password=$123
+
 echo "$password"
 read  password 
 
