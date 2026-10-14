@@ -2,7 +2,7 @@
 
 useradd=$[sandeep]
 useradd=$i 
-if [ $? -ne 0 ] ; then
+if [ $useradd -ne 0 ]; then
    echo "please create user"
    read -s create user
 else
