@@ -1,7 +1,7 @@
 #!/bin/bash
 
-username sandeep 
-useradd=$username -m /home/sandeep -s /bin/bash
+useradd=sandeep
+useradd $i -m /home/sandeep -s /bin/bash
 if [ $? -ne 0 ] ; then
    echo "please create user"
 else
