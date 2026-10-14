@@ -1,5 +1,9 @@
 #!/bin/bash
 
+useradd=$username
+echo "create user"
+read -s create user
+
 
 echo "proceeding"
 
@@ -18,10 +22,6 @@ else
     exit 1
 fi
 
-#!/bin/bash
 
-useradd=$username
-echo "create user"
-read -s create user
 
      
