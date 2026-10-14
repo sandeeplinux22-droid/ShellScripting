@@ -8,6 +8,7 @@ if [[ $?  < 0 ]]; then
     exit 1
 fi 
 
+#!/bin/bash
 user_add=sandeep
 if [$user_add < 0]; then
    echo "please create user"
