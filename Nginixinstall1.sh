@@ -22,6 +22,7 @@ else
 else 
      echo "Nginx insatllation completed"
      exit 1
+fi
 
 dnf install  mysql -y
 
