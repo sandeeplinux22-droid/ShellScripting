@@ -1,15 +1,6 @@
 #!/bin/bash
 
 
-user_id=$(id -u)
-
-if [ $user_id -ne 0 ]; then
-    echo "please run with sudo access"
-    
-     exit 1
-fi
-
-
 echo "proceeding"
 
 dnf install nginx -y
@@ -26,4 +17,11 @@ else
     echo "mysql installation success"
     exit 1
 fi
+
+#!/bin/bash
+
+useradd=$username
+echo "create user"
+read -s create user
+
      
