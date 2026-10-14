@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dnf install nginx -y
+dnf install nginix -y
 if [[ $?  < 0 ]]; then
     echo "nginix failed"
  else
