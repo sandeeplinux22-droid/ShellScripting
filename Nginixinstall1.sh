@@ -10,8 +10,9 @@ fi
 
 #!/bin/bash
 user_add=sandeep
+echo "$user_add"
 if [$user_add < 0]; then
    echo "please create user"
-   read -s create user
+   read -s user_add
 fi
 
