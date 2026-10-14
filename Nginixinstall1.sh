@@ -1,7 +1,12 @@
 #!/bin/bash
 
-useradd=$username
-echo "create user"
+username sandeep 
+useradd=$username -m /home/sandeep -s /bin/bash
+if [ $? -ne 0 ] ; then
+   echo "please create user"
+else
+    echo "if user not availble, please quit
+    exit 1
 read -s create user
 
 
