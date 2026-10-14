@@ -8,3 +8,27 @@ if [ $user_id -ne 0 ]; then
     
      exit 1
 fi
+
+
+echo "proceeding"
+
+dnf install nginix -y
+if [[ $? < 0 ]]; then
+    echo "Nginx installation is failed"
+    exit 1
+else
+     echo "Nginx installation is success"
+     exit 1
+else 
+     echo "Nginix insatllation completed"
+     exit 1
+
+dnf install  mysql -y
+
+if [[ $? < 0 ]] ; then
+    echo "mysql installtion failed"
+else 
+    echo "mysql installation success"
+    exit 1
+fi
+     
