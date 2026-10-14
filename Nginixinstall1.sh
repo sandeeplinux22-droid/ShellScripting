@@ -1,7 +1,7 @@
 #!/bin/bash
 
-userid=$(id -u)
+userid=$(ec2-user -u)
 if [ $userid -ne 0 ]; then
-echo "if it was 0 then it was root user"
+echo "please run with sudo access"
 exit 1
 fi
