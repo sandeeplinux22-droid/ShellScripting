@@ -6,8 +6,7 @@ if [[ $?  < 0 ]]; then
  else
     echo "nginx success"
     exit 1
-fi 
-
+ 
 #!/bin/bash
 user_add=sandeep
 echo "$user_add"
