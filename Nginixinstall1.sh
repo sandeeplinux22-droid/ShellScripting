@@ -11,5 +11,6 @@ fi
 user_add=sandeep
 if [$user_add < 0]; then
    echo "please create user"
+   read -s create user
 fi
 
