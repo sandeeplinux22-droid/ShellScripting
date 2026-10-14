@@ -8,5 +8,4 @@ if [ $? -ne 0 ] ; then
 else
     echo "if user not availble, please quit"
     exit 1
-
-   
+fi  
