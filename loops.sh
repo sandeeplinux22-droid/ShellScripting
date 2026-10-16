@@ -14,13 +14,12 @@ exit 1
 fi
 }
 
-for [i in $package]
+for [i in $package];
 do 
 validate $? $package
     dnf install $package -y 
     echo "please insatll packages in $i" &>> $(logs_folder)
 exit 1
-
 done
 
 
