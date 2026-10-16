@@ -14,7 +14,7 @@ exit 1
 fi
 }
 
-for [i in $package];
+for package in $@
 do 
 validate $? $package
     dnf install $package -y 
