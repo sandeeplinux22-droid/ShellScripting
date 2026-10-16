@@ -4,6 +4,9 @@ user_id=($id -u)
 echo "run  without sudo access"
 exit 1
 run -p $user_id
+
+#!/bin/bash
+
 echo "proceeding"
 dnf install nginix -y
 if [ $? < 0 ]; then
