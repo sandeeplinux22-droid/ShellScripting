@@ -5,7 +5,7 @@ logs_file="$(logs_folder)/${0}.log"
 
 mkdir -p ${logs_folder}
 
-echo "
+
 
 validate(){
 if [ $& -ne 0 ]; then
