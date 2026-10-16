@@ -18,7 +18,7 @@ for package in $@
 do 
 validate $? $package
     dnf install $package -y 
-    echo "please insatll packages in $i" &>> $(logs_folder)
+    echo "please insatll packages in $i" &>> ${logs_folder}
 exit 1
 done
 
