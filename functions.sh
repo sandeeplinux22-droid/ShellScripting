@@ -1,7 +1,7 @@
 #!/bin/bash
 
 logs_folder=/var/log/Shellscripting/
-logs_file=${logs_folder/$0}
+logs_file="$(logs_folder/&0).log"
 
 mkdir -p $logs_folder
 
@@ -19,9 +19,9 @@ fi
 }
 echo "proceeding"
 dnf install nginx -y
-validate $? "Nginix installation" >> $logs_file
+validate $? "Nginix installation" &>> $logs_file
 dnf install mysql -y
-validate $? "My Sql installation"
+validate $? "My Sql installation" &>> $logs_fil
 
 echo "script completed date $(date +"%F %T")
 exit 1
