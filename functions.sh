@@ -7,7 +7,6 @@ if [ $?  -ne 0 ]; then
 else
    echo "please stop installing nginx if it was failed"
 exit 1
-fi
 
 dnf install mysql -y
 if [ $? -ne  0 ]; then
