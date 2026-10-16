@@ -5,8 +5,7 @@ validate(){
    echo "$2...Success"
    echo "$2...failed
    exit 1
-else
-   echo "please stop installing nginx if it was failed"
+
 
 fi
 
@@ -15,7 +14,10 @@ echo "proceeding"
 dnf install nginx -y
 validate $? "Nginix installation"
 dnf install mysql -y
-validate $? "Mysql installation"
+validate $? "My Sql insatllation"
+exit 1
+
+
 
 
 
