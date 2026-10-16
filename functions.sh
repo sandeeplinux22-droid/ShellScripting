@@ -3,7 +3,7 @@
 validate(){
     if [ $1  -ne 0 ]; then
    echo "$2...Success"
-   echo "$2...failed
+   echo "$2...failed"
    exit 1
 
 
@@ -14,7 +14,7 @@ echo "proceeding"
 dnf install nginx -y
 validate $? "Nginix installation"
 dnf install mysql -y
-validate $? "My Sql insatllation"
+validate $? "My Sql installation"
 exit 1
 
 
