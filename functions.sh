@@ -8,8 +8,8 @@ echo "script started date $(date +"%F %T") &>> $logs_file
 
 validate(){
     if [ $1  -ne 0 ]; then
-   echo "$2...Success" | tee -a $logs_file
-   echo "$2...failed"  | tee -a $logs_file
+   echo "$2...Success" | tee -a &$logs_file
+   echo "$2...failed"  | tee -a &$logs_file
    exit 1
 
 
