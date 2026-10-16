@@ -1,7 +1,7 @@
 #!/bin/bash
 
 logs_folder=/var/log/Shellscripting/
-logs_file=$[logs_folder/$0]
+logs_file=${logs_folder/$0}
 
 mkdir -p $logs_folder
 
