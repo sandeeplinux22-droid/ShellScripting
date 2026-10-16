@@ -3,9 +3,9 @@
 echo "proceeding"
 dnf install ngnix -y
 if [ $? < 0 ]; then
-   echo "please install ngnix if it was success"
+   echo "please install nginx if it was success"
 else
-   echo "please stop installing ngnix if it was failed"
+   echo "please stop installing nginx if it was failed"
 exit 1
 fi
 
