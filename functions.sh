@@ -15,3 +15,4 @@ else
     echo "please install my sql if install failed throw error failed"
 exit 1
 fi 
+fi
