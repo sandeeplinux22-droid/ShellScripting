@@ -3,8 +3,7 @@
 user_id=($id -u)
 echo "run  without sudo access"
 exit 1
-run -p $user_id 
-
+run -p $user_id
 echo "proceeding"
 if [ $? < 0 ]; then
    echo "please install ngnix if it was success"
