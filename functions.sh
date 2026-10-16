@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "proceeding"
-dnf install ngnix -y
+dnf install nginx -y
 if [ $?  -ne 0 ]; then
    echo "please install nginx if it was success"
 else
