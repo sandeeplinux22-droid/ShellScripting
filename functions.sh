@@ -17,11 +17,11 @@ fi
 
 }
 echo "proceeding"
-dnf install nginx -y
-validate $? "Nginix installation" &>> $logs_file
-dnf install mysql -y
-validate $? "My Sql installation" &>> $logs_fil
+dnf install nginx -y &>> $logs_file
+validate $? "Nginix installation" 
+dnf install mysql -y &>> $logs_fil
 
+validate $? "My Sql installation" 
 echo "script completed date $(date +"%F %T")
 exit 1
 
