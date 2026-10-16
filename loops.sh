@@ -12,7 +12,7 @@ exit 1
 fi
 }
 
-for (i in $package);
+for [i in $package]
 do 
 validate(){
     dnf install $package -y 
