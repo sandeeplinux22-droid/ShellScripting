@@ -1,11 +1,11 @@
 #!/bin/bash
 
-logs_folder=/var/log/Shellscripting/
+logs_folder="var/log/Shellscripting/"
 logs_file="$(logs_folder)/$0.log"
 
 mkdir -p $logs_folder
 
-echo "script started date $(date +"%F %T")
+echo "script started date $(date +"%F %T") &>> $logs_file
 
 validate(){
     if [ $1  -ne 0 ]; then
