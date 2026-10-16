@@ -8,7 +8,7 @@ mkdir -p $logs_folder
 
 
 validate(){
-if [ $& -ne 0 ]; then
+if [ $@ -ne 0 ]; then
     echo "install ngnix" &>> $(logs_folder)
 exit 1
 fi
