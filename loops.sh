@@ -3,7 +3,7 @@
 logs_folder="/var/log/Shellscripting"
 logs_file="$(logs_folder)/${0}.log"
 
-mkdir -p ${logs_folder}
+mkdir -p $logs_folder
 
 
 
