@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "proceeding"
-dnf install nginix -y
+dnf install ngnix -y
 if [ $? < 0 ]; then
    echo "please install ngnix if it was success"
 else
@@ -10,7 +10,7 @@ exit 1
 fi
 
 dnf install mysql -y
-if [ $? < 0 ]; then
+if [ $?  < 0 ]; then
    echo "please install my sql if install get success"
 else
     echo "please install my sql if install failed throw error failed"
