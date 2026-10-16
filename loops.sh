@@ -5,6 +5,7 @@ logs_file="$(logs_folder)/${0}.log"
 
 mkdir -p ${logs_folder}
 
+echo "
 
 validate(){
 if [ $& -ne 0 ]; then
@@ -15,11 +16,11 @@ fi
 
 for [i in $package]
 do 
-validate(){
+validate $? $package
     dnf install $package -y 
     echo "please insatll packages in $i" &>> $(logs_folder)
 exit 1
 
 done
-}
+
 
