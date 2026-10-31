@@ -1,6 +1,6 @@
 #!/bin/bash
 
-disk_usage=$df -hT | grep -v Filesystem
+disk_usage=$(df -hT | grep -v Filesystem)
 user_threshold=20
 server_ip=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
 
