@@ -10,4 +10,4 @@ do
  
     
 
-done <<< "$disk_usage
+done <<< "$disk_usage"
